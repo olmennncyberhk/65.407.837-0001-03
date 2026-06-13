@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Atendimento</title>
+  <link rel="icon" href="img/logo_7f75b847989f.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+    html, body {
+      margin: 0;
+      min-height: 100%;
+      font-family: Raleway, system-ui, sans-serif;
+      background: #f7f7fb;
+      color: #1f2937;
+    }
+    .app-header {
+      background: #fff;
+      border-bottom: 1px solid #e6e6e6;
+    }
+    .app-header__inner {
+      max-width: 64rem;
+      margin: 0 auto;
+      padding: 1rem 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+    .app-header__logo {
+      display: block;
+      height: 2.75rem;
+      width: auto;
+      max-width: min(12.5rem, 58vw);
+      object-fit: contain;
+    }
+    .app-header__tag {
+      font-size: 0.875rem;
+      color: #6b7280;
+      font-weight: 500;
+    }
+    .app-wrap {
+      max-width: 28rem;
+      margin: 0 auto;
+      padding: 1.5rem 1.25rem 3rem;
+    }
+    .app-card {
+      background: #fff;
+      border-radius: 0.75rem;
+      border: 1px solid #e5e7eb;
+      box-shadow: 0 1px 3px rgba(20, 52, 118, 0.06);
+      padding: 1.75rem 1.5rem;
+      text-align: center;
+    }
+    .app-title {
+      margin: 0 0 0.5rem;
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: #143476;
+      line-height: 1.25;
+    }
+    .app-lead {
+      margin: 0 0 1.5rem;
+      font-size: 0.9375rem;
+      color: #4b5563;
+      line-height: 1.6;
+    }
+    .app-icon-wrap {
+      width: 5.5rem;
+      height: 5.5rem;
+      margin: 0 auto 1.25rem;
+      border-radius: 1.25rem;
+      overflow: hidden;
+      box-shadow: 0 8px 24px rgba(20, 52, 118, 0.12);
+    }
+    .app-icon-wrap img {
+      width: 100%;
+      height: 100%;
+      display: block;
+      object-fit: cover;
+    }
+    .app-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      width: 100%;
+      height: 52px;
+      border: none;
+      border-radius: 9999px;
+      background: #02a102;
+      color: #fff;
+      font-family: inherit;
+      font-size: 1rem;
+      font-weight: 600;
+      text-decoration: none;
+      cursor: pointer;
+      box-shadow: 0 4px 14px rgba(2, 161, 2, 0.35);
+      transition: transform 0.15s ease, box-shadow 0.15s ease;
+      -webkit-appearance: none;
+      appearance: none;
+    }
+    .app-btn:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 6px 18px rgba(2, 161, 2, 0.4);
+    }
+    .app-btn svg { flex-shrink: 0; }
+    .app-steps {
+      margin-top: 1.75rem;
+      text-align: left;
+      padding: 1.25rem;
+      background: #f9fafb;
+      border-radius: 0.625rem;
+      border: 1px solid #e5e7eb;
+    }
+    .app-steps h2 {
+      margin: 0 0 1rem;
+      font-size: 0.9375rem;
+      font-weight: 700;
+      color: #143476;
+    }
+    .app-steps__video {
+      width: 100%;
+      display: block;
+      border-radius: 0.5rem;
+      background: #000;
+    }
+    .app-steps .app-btn {
+      margin-top: 1.25rem;
+    }
+    .app-help {
+      margin-top: 1.25rem;
+      text-align: left;
+      padding: 1.25rem;
+      background: #f9fafb;
+      border-radius: 0.625rem;
+      border: 1px solid #e5e7eb;
+    }
+    .app-help h2 {
+      margin: 0 0 0.75rem;
+      font-size: 0.9375rem;
+      font-weight: 700;
+      color: #143476;
+    }
+    .app-help__text {
+      margin: 0;
+      font-size: 0.875rem;
+      color: #4b5563;
+      line-height: 1.55;
+    }
+  </style>
+</head>
+<body>
+  <header class="app-header">
+    <div class="app-header__inner">
+      <a href="../" id="logoHome">
+        <img class="app-header__logo" src="img/logo-BSkubM0u.png" alt="Portal da Pesca">
+      </a>
+      <span class="app-header__tag">Instalação do app</span>
+    </div>
+  </header>
+
+  <main class="app-wrap">
+    <div class="app-card">
+      <div class="app-icon-wrap">
+        <img src="img/logo_7f75b847989f.png" alt="Carteira de Pesca">
+      </div>
+
+      <h1 class="app-title" id="appTitle">Instale a Carteira de Pesca</h1>
+      <p class="app-lead" id="appLead">
+        Baixe o aplicativo oficial para concluir sua solicitação e acessar sua licença digital no celular.
+      </p>
+
+      <div class="app-steps">
+        <h2>Como instalar:</h2>
+        <video class="app-steps__video" controls playsinline preload="metadata">
+          <source src="img/video.mp4" type="video/mp4">
+        </video>
+        <a class="app-btn" href="">Baixar Aplicativo</a>
+      </div>
+
+      <div class="app-help">
+        <h2>Precisa de ajuda?</h2>
+        <p class="app-help__text">
+          Caso tenha dificuldades para acessar ou utilizar o aplicativo, solicite atendimento com um de nossos consultores através do WhatsApp.
+        </p>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
