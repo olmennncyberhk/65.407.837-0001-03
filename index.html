@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Página Inicial</title>
+  <style>
+    body {
+      margin: 0;
+      background: #f7f8fb;
+      color: #1f2937;
+      font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    }
+
+    .chk-box {
+      text-align: center;
+      padding: 2rem;
+      max-width: 420px;
+      color: #333;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto;
+      position: fixed;
+      inset: 0;
+      z-index: 9999;
+      background: #fff;
+    }
+
+    .hidden {
+      display: none !important;
+    }
+
+    .spinner-wrap {
+      margin-bottom: 1.5rem;
+    }
+
+    .spinner {
+      width: 46px;
+      height: 46px;
+      margin: 0 auto;
+      border-radius: 50%;
+      border: 3px solid #e8ecf4;
+      border-top-color: #2563eb;
+      animation: spin 0.75s linear infinite;
+    }
+
+    @keyframes spin {
+      to {
+        transform: rotate(360deg);
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .spinner {
+        animation-duration: 1.6s;
+      }
+    }
+
+    .load-title {
+      margin: 0 0 0.35rem;
+      font-size: 1.35rem;
+      font-weight: 600;
+      color: #111827;
+      letter-spacing: -0.02em;
+      line-height: 1.3;
+    }
+
+    .msg {
+      margin: 0;
+      color: #6b7280;
+      font-size: 0.95rem;
+      line-height: 1.5;
+      max-width: 280px;
+    }
+  </style>
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-18161832629">
+</script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-18161832629');
+</script>
+</head>
+<body>
+  <div class="chk-box" id="checker" aria-busy="true" aria-live="polite">
+    <div class="spinner-wrap" aria-hidden="true">
+      <div class="spinner"></div>
+    </div>
+    <h3 class="load-title">Iniciando atendimento…</h3>
+    <p id="status" class="msg">Só um instante: estamos preparando tudo para você.</p>
+  </div>
+
+  <script src="js/verification.js" defer></script>
+  <noscript>
+    <p style="padding:16px;color:#b91c1c;">
+      Esta página precisa de JavaScript para a verificação de risco.
+    </p>
+  </noscript>
+</body>
+</html>

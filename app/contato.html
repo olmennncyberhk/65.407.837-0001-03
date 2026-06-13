@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Entre em contato com o blog Águas Abertas. E-mail, WhatsApp e endereço da Via Autodoc em São Bernardo do Campo, SP.">
+  <title>Contato | Águas Abertas — Blog de Pesca Amadora</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Nunito+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="disclaimer-bar" role="note">
+    <strong>Blog independente</strong> — Não realizamos licenças de pesca nem serviços governamentais.
+  </div>
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">
+        <div class="logo-icon" aria-hidden="true">🎣</div>
+        <div class="logo-text"><strong>Águas Abertas</strong><span>Blog de Pesca Amadora</span></div>
+      </a>
+      <nav class="nav-main" aria-label="Menu principal">
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="sobre.html">Sobre Nós</a></li>
+          <li><a href="contato.html" class="active">Contato</a></li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <a href="#" class="btn btn-whatsapp" data-whatsapp>WhatsApp</a>
+        <button type="button" class="menu-toggle" id="menu-toggle" aria-expanded="false" aria-controls="mobile-nav" aria-label="Abrir menu"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+    <nav class="mobile-nav" id="mobile-nav" aria-label="Menu mobile">
+      <ul><li><a href="index.html">Início</a></li><li><a href="contato.html">Contato</a></li></ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="page-hero">
+      <div class="container">
+        <nav class="breadcrumb"><a href="index.html">Início</a> / Contato</nav>
+        <h1>Contato</h1>
+        <p>Dúvidas sobre o blog, parcerias, sugestões de pauta ou materiais — fale conosco.</p>
+      </div>
+    </div>
+
+    <section style="padding:var(--space-2xl) 0">
+      <div class="container">
+        <div class="transparency-box" style="margin-bottom:var(--space-xl)">
+          <p><strong>Importante:</strong> Não atendemos pedidos de licença de pesca, autorização do IBAMA ou serviços de órgãos públicos. Para essas questões, consulte os canais oficiais do seu estado e município.</p>
+        </div>
+
+        <div class="contact-grid">
+          <div>
+            <div class="contact-card">
+              <h3>Dados de Contato</h3>
+              <div class="contact-item">
+                <div class="contact-item-icon" aria-hidden="true">✉️</div>
+                <div>
+                  <strong>E-mail</strong><br>
+                  <a href="mailto:meucnpj@contabilizei.com.br">meucnpj@contabilizei.com.br</a>
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="contact-item-icon" aria-hidden="true">📱</div>
+                <div>
+                  <strong>Telefone / WhatsApp</strong><br>
+                  <a href="tel:+554197880145">(41) 97880-145</a><br>
+                  <a href="#" data-whatsapp class="btn btn-whatsapp" style="margin-top:0.5rem">Abrir WhatsApp</a>
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="contact-item-icon" aria-hidden="true">📍</div>
+                <div>
+                  <strong>Endereço</strong><br>
+                  Rua Marechal Deodoro, 1805<br>
+                  São Bernardo do Campo/SP<br>
+                  CEP 09710-191
+                </div>
+              </div>
+            </div>
+
+            <div class="contact-card" style="margin-top:var(--space-lg)">
+              <h3>Dados da Entidade</h3>
+              <p><strong>Razão Social:</strong> Via Autodoc Servicos Administrativos LTDA<br>
+              <strong>Nome Fantasia:</strong> Via Autodoc<br>
+              <strong>CNPJ:</strong> 65.407.837/0001-03</p>
+            </div>
+          </div>
+
+          <div class="contact-card">
+            <h3>Envie uma Mensagem</h3>
+            <p style="font-size:0.9375rem;color:var(--color-text-muted);margin-bottom:var(--space-md)">Respondemos em até 48 horas úteis. Campos com * são obrigatórios.</p>
+            <form class="contact-form" aria-label="Formulário de contato">
+              <label for="nome">Nome *</label>
+              <input type="text" id="nome" name="nome" required autocomplete="name">
+
+              <label for="email">E-mail *</label>
+              <input type="email" id="email" name="email" required autocomplete="email">
+
+              <label for="assunto">Assunto *</label>
+              <select id="assunto" name="assunto" required>
+                <option value="">Selecione...</option>
+                <option value="duvida">Dúvida sobre conteúdo</option>
+                <option value="sugestao">Sugestão de artigo</option>
+                <option value="parceria">Parceria / Afiliados</option>
+                <option value="review">Enviar produto para review</option>
+                <option value="outro">Outro</option>
+              </select>
+
+              <label for="mensagem">Mensagem *</label>
+              <textarea id="mensagem" name="mensagem" required placeholder="Descreva sua mensagem. Não envie dados sensíveis."></textarea>
+
+              <p style="font-size:0.8125rem;color:var(--color-text-muted);margin-bottom:var(--space-md)">
+                Ao enviar, você concorda com nossa <a href="politica-privacidade.html">Política de Privacidade</a>.
+              </p>
+              <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
+              <p class="form-message" aria-live="polite"></p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-legal">
+      <p>Blog independente · Via Autodoc · CNPJ 65.407.837/0001-03</p>
+      <p><a href="politica-privacidade.html">Privacidade</a> · <a href="termos-uso.html">Termos</a> · <a href="transparencia.html">Transparência</a></p>
+    </div>
+    <div class="container footer-bottom"><p>© <span id="current-year">2026</span> Águas Abertas</p></div>
+  </footer>
+  <a href="#" class="whatsapp-float" data-whatsapp aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.882 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg><span>WhatsApp</span></a>
+  <script src="js/main.js" defer></script>
+</body>
+</html>
